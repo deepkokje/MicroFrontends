@@ -6,10 +6,13 @@ import federation from '@originjs/vite-plugin-federation';
 export default defineConfig({
   plugins: [react(),
     federation({
-      name:'Header',
+      name:'Remote',
       filename:'remoteEntry.js',
       exposes: {
         './Header': './src/components/Header.jsx'
+      },
+      remotes: {
+        store:'http://localhost:4173/assets/remoteEntry.js'
       },
       shared: ['react','react-dom']
     })
