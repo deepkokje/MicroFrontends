@@ -12,12 +12,12 @@ const ProductCard = () => {
                   <h2 className="text-xl font-bold mb-2">{product.name}</h2>
                   <p className="text-gray-700 text-base">{product.description}</p>
                 </div>
-          <div className="p-4 mt-1">
-              <button onClick={() =>addToCart(product)} 
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 float-right">
-                Add to Cart
-              </button>
-            </div>
+                <div className="p-4 mt-1 mb-1">
+                    <button onClick={() =>addToCart(product)} 
+                      className="bg-purple-400 text-white px-4 py-2 rounded hover:bg-purple-500">
+                      Add to Cart
+                    </button>
+                  </div>
               </div>
             ))}
           </div>

@@ -23,7 +23,6 @@ const Modal = ({ showModal, setShowModal, products, clearCart }) => {
               {products.map((product, index) => (
                 <li key={index} className="flex justify-between items-center border-b py-2">
                   <span>{product.name}</span>
-                  <span>${product.price}</span>
                 </li>
               ))}
             </ul>
